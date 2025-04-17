@@ -1,0 +1,50 @@
+# 🔁 Loopback Test – Virtual SOC Lab
+
+## 🧪 Purpose
+
+To simulate traffic on the Kali VM using the loopback interface (`127.0.0.1`) and observe the generated packets using Wireshark and tcpdump. This helps test tools and traffic analysis **without needing a second VM**.
+
+---
+
+## 🛠️ Tools Used
+
+- `python3` – To launch a basic HTTP server on port 8080
+- `curl` – To send a request to the local server
+- `nmap` – To simulate a port scan
+- `tcpdump` – To capture traffic on the loopback interface
+- `Wireshark` – To visually analyze the captured packets
+- `flameshot` – To take annotated screenshots for documentation
+
+### Launch HTTP Server
+
+sudo python3 -m http.server 8080
+
+## Simulate Traffic 
+
+curl http://127.0.0.1:8080
+nmap -sS -p 8080 127.0.0.1
+nc 127.0.0.1 8080
+
+## Capture packets with tcpdump
+
+sudo tcpdump -i lo -nn -w ~/Projects/Virtual-SOC-Lab/pcaps/loopback-test.pcap
+
+## 📷 Screenshots
+
+Wireshark capture showing 127.0.0.1:8080 traffic ![Wireshark showing loopback traffic](../images/wireshark-loopback.png)
+
+Curl response from local HTTP server and Nmap scan output on terminal ![Wireshark showing loopback traffic](../images/curl-nmap.png)
+
+
+## 🔍 Observations
+
+The HTTP request was visible in both tcpdump and Wireshark with source/destination 127.0.0.1:8080.
+
+Nmap scan created SYN packets visible on port 8080.
+
+The response headers from the Python HTTP server included status code 200 OK.
+
+TCP 3-way handshake could be observed clearly in the capture.
+
+Loopback traffic appeared only on the lo interface, not on eth0.
+
