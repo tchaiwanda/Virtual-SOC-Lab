@@ -1,0 +1,16 @@
+*.pcap
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments (if you have one)
+venv/
+
+# Ignore IDE/editor-specific files (optional)
+.vscode/
+.idea/
+
+# Ignore macOS system files (optional)
+.DS_Store
+
