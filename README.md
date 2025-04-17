@@ -39,9 +39,3 @@ This project simulates a basic Virtual Security Operations Center (SOC) lab usin
 ### 🔎 Run a SYN scan with Nmap
 ```bash
 nmap -sS -T4 192.168.1.105
-
-
-## 🔍 Direct Screenshot Test
-
-![Wireshark](images/wireshark-loopback.png)  
-![Nmap](images/curl-nmap.png)
