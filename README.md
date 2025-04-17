@@ -31,8 +31,7 @@ This project simulates a basic Virtual Security Operations Center (SOC) lab usin
 
 | Wireshark Traffic Capture | Nmap Port Scan |
 |---------------------------|----------------|
-| ![](images/wireshark-loopback.png)<br><sub>Loopback Capture</sub> | ![](images/curl-nmap.png)<br><sub>Port Scan with curl + nmap</sub> |
-
+| ![](https://raw.githubusercontent.com/tchaiwanda/Virtual-SOC-Lab/main/Virtual-SOC-Lab/images/wireshark-loopback.png) | ![](https://raw.githubusercontent.com/tchaiwanda/Virtual-SOC-Lab/main/Virtual-SOC-Lab/images/curl-nmap.png) |
 ---
 
 ## 💻 Sample Commands
