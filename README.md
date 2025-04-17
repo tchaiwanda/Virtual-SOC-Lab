@@ -24,20 +24,14 @@ This project simulates a basic Virtual Security Operations Center (SOC) lab usin
 - ✅ Built foundational SOC analyst skills in a virtual environment
 - ✅ Documented and explained SOC-relevant commands
 
----
-
-## 🖼️ Lab Setup Diagram
-
-![Virtual SOC Lab Diagram](images/lab-diagram.png)  
-<sub>*Diagram created in draw.io – replace this with your own!* 🎨</sub>
 
 ---
 
 ## 📷 Screenshots
 
-| Wireshark Traffic Capture | Nmap Port Scan | Netcat Reverse Shell |
-|---------------------------|----------------|------------------------|
-| ![](images/wireshark.png) | ![](images/nmap.png) | ![](images/netcat.png) |
+| Wireshark Traffic Capture | Nmap Port Scan |
+|---------------------------|----------------|
+| ![](images/wireshark-loopback.png) | ![](images/curl-nmap.png) |
 
 ---
 
