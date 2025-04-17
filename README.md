@@ -31,7 +31,7 @@ This project simulates a basic Virtual Security Operations Center (SOC) lab usin
 
 | Wireshark Traffic Capture | Nmap Port Scan |
 |---------------------------|----------------|
-| ![](images/wireshark-loopback.png) | ![](images/curl-nmap.png) |
+| ![](images/wireshark-loopback.png)<br><sub>Loopback Capture</sub> | ![](images/curl-nmap.png)<br><sub>Port Scan with curl + nmap</sub> |
 
 ---
 
@@ -40,6 +40,7 @@ This project simulates a basic Virtual Security Operations Center (SOC) lab usin
 ### 🔎 Run a SYN scan with Nmap
 ```bash
 nmap -sS -T4 192.168.1.105
+
 
 ## 🔍 Direct Screenshot Test
 
