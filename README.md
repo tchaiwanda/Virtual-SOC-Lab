@@ -1,3 +1,5 @@
+⚠️ Educational use only. Test on devices/networks you own or have explicit permission to assess. Comply with local laws.
+
 # 🔍 Virtual SOC Lab – Blue Team Practice
 
 ## 📌 Overview
